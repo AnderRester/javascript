@@ -1,7 +1,7 @@
 const dataBase = [
     first = {
         name: "First",
-        marks: [8, 10, 7, 5, 8]
+        marks: [2, 2, 7, 5, 2]
     },
     second = {
         name: "Second",
@@ -20,6 +20,7 @@ const dataBase = [
         marks: [8, 10, 9, 10, 10]
     }
 ]
+let averageMarks = []
 
 // for (let i = 0; i < dataBase.length; i++) {
 //     alert(dataBase[i].marks.length);
@@ -33,22 +34,28 @@ const dataBase = [
 
 let unitAverage = 1;
 const average = () => {
-    for (let i = 0; i < dataBase.length; i++) {
-        for (let a = 0; a < dataBase[i].marks.length; a++) {
-            unitAverage += dataBase[i].marks[a];
+        for (let i = 0; i < dataBase.length; i++) {
+            for (let a = 0; a < dataBase[i].marks.length; a++) {
+                unitAverage += dataBase[i].marks[a];
+            }
+            averageMarks[i] = unitAverage / dataBase[i].marks.length;
+            return (averageMarks[i]);
+            unitAverage = 0;
         }
-        unitAverage = unitAverage / dataBase[i].marks.length;
-        alert(unitAverage);
-        unitAverage = 0;
+    }
+    // average(unitAverage);
+    //average(unitAverage);
+
+
+const sort = () => {
+    for (let i = 0; i < dataBase.length; i++) {
+        if (averageMarks[i] < 5) {
+            alert(dataBase[i].name);
+        }
     }
 }
-average(unitAverage);
 
-
-
-
-
-
+sort();
 
 // const sort = () => {
 //     if (unitAverage < 5) {

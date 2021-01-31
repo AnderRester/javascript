@@ -1,12 +1,10 @@
-// let user = new Object();
-
-let user = {
+const user = {
     name: "John",
     pass: "ads2123"
-};
+}
 
-let username = prompt("Введите имя пользователя", "User");
-let password = prompt("Введите пароль", "password");
+const username = prompt("Введите имя пользователя", "User");
+const password = prompt("Введите пароль", "password");
 
 if (user.name == username && user.pass == password) {
     alert("Привет");

@@ -1,8 +1,8 @@
-let username = prompt("Введите имя пользователя", "User");
+const username = prompt("Введите имя пользователя", "User");
 
 alert(`Привет ${username}`);
 
-let result = confirm("Вы знакомы с JavaScript");
+const result = confirm("Вы знакомы с JavaScript");
 if (result == true) {
     alert("Молодец");
 } else {

@@ -1,4 +1,4 @@
-let CurrencyValue = prompt("Введите тип валюты и размер транзакции", "$5");
+const CurrencyValue = prompt("Введите тип валюты и размер транзакции", "$5");
 
 function extractCurrencyValue(CurrencyValue) {
     let num = "";

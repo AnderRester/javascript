@@ -1,12 +1,9 @@
-let a = prompt("Введите интервал", 0);
-let b = prompt("Введите интервал", 0);
+let a = Number(prompt("Введите интервал", 0));
+const b = Number(prompt("Введите интервал", 0));
 let sum = 0;
-let x = parseInt(a);
-let y = parseInt(b);
-for (; x <= y; x++) {
-    //sum += x;
-    if (x % 2 == 0) {
-        sum += x;
+for (a; a <= b; a++) {
+    if (a % 2 == 0) {
+        sum += a;
     }
 }
 alert(sum);

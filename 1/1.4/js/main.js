@@ -1,11 +1,11 @@
-let str = prompt("Введите имя", "Некто");
+const nickname = prompt("Введите имя", "Некто");
 
-function ucFirst(str) {
+function ucFirst(nickname) {
     let word = "";
-    for (let i = 1; i <= str.length; i++) {
-        word += str.charAt(i);
+    for (let i = 1; i <= nickname.length; i++) {
+        word += nickname.charAt(i);
     }
-    return (str.charAt(0).toUpperCase() + word);
+    return (nickname.charAt(0).toUpperCase() + word);
 
 }
-alert(ucFirst(str));
+alert(ucFirst(nickname));

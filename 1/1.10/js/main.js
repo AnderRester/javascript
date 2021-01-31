@@ -1,10 +1,10 @@
-let num = prompt("Введите число");
+const num = Number(prompt("Введите число"));
 
-function dividers(num) {
-    for (let i = 1; i <= num; i++) {
+function divisors(num) {
+    for (let i = 1; i <= num / 2; i++) {
         if (num % i == 0) {
             console.log(i);
         }
     }
 }
-alert(dividers(num));
+divisors(num) + console.log(num);
